@@ -20,7 +20,7 @@ export default function S11Takeaway() {
 
         <div className="container-md" style={{ position: 'relative', zIndex: 1, textAlign: 'center', paddingTop: '5rem', paddingBottom: '5rem' }}>
           <Reveal>
-            <p className="section__eyebrow">09 · סיכום</p>
+            <p className="section__eyebrow">08 · סיכום</p>
             <h2
               id="s11-title"
               style={{ fontSize: 'clamp(1.75rem, 3.2vw, 2.75rem)', fontWeight: 700, color: 'white', marginBottom: '0.75rem', lineHeight: 1.2 }}

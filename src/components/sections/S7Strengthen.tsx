@@ -27,18 +27,19 @@ export default function S7Strengthen() {
                 const widthPct = (item.pct / max) * 100
                 return (
                   <div key={item.he} className="lollipop-item" role="listitem">
-                    <div className="lollipop-label" style={{ fontWeight: isTop ? 700 : 500 }}>
+                    <div className="lollipop-label" style={{ fontWeight: isTop ? 700 : 500, minWidth: 'clamp(100px, 35%, 200px)', maxWidth: 'clamp(100px, 35%, 200px)' }}>
                       {item.he}
                       {isTop && (
                         <span style={{
                           display: 'inline-block',
-                          marginRight: 8,
+                          marginRight: 6,
                           background: '#E0F5F7',
                           color: '#007A87',
-                          fontSize: '0.75rem',
+                          fontSize: '0.7rem',
                           fontWeight: 700,
-                          padding: '2px 8px',
+                          padding: '2px 7px',
                           borderRadius: 999,
+                          whiteSpace: 'nowrap',
                         }}>
                           עדיפות
                         </span>
