@@ -13,8 +13,13 @@ export default function Reveal({ children, delay = 0, className = '', style = {}
   return (
     <div
       ref={ref}
-      className={`reveal ${inView ? 'in' : ''} ${className}`}
-      style={{ transitionDelay: inView ? `${delay}ms` : '0ms', ...style }}
+      className={`reveal ${className}`}
+      style={{
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'translateY(0)' : 'translateY(20px)',
+        transitionDelay: inView ? `${delay}ms` : '0ms',
+        ...style,
+      }}
     >
       {children}
     </div>

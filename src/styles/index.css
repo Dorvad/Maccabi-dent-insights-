@@ -66,12 +66,8 @@
   }
 
   .reveal {
-    @apply opacity-0 translate-y-6 transition-all duration-700;
-    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-  }
-
-  .reveal.in {
-    @apply opacity-100 translate-y-0;
+    transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .ltr {

@@ -11,11 +11,12 @@ export function useInView(options?: { threshold?: number }): [RefObject<HTMLDivE
 
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) setInView(true) },
-      { threshold: options?.threshold ?? 0.05, rootMargin: '0px 0px -5% 0px' }
+      { threshold: options?.threshold ?? 0, rootMargin: '0px' }
     )
     const el = ref.current
     if (el) observer.observe(el)
-    const safetyId = setTimeout(() => setInView(true), 3000)
+    // Force reveal after 600ms — handles edge cases (iframes, SSR hydration, etc.)
+    const safetyId = setTimeout(() => setInView(true), 600)
     return () => {
       if (el) observer.unobserve(el)
       clearTimeout(safetyId)
