@@ -1,8 +1,16 @@
-import { useState, useEffect, useRef, RefObject } from 'react'
+import { useState, useEffect, useLayoutEffect, useRef, RefObject } from 'react'
 
 export function useInView(options?: { threshold?: number }): [RefObject<HTMLDivElement>, boolean] {
   const ref = useRef<HTMLDivElement>(null)
   const [inView, setInView] = useState(false)
+
+  // Reveal elements already visible on first paint — runs before browser paints, so no flash
+  useLayoutEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const rect = el.getBoundingClientRect()
+    if (rect.top < window.innerHeight && rect.bottom > 0) setInView(true)
+  }, [])
 
   useEffect(() => {
     if (inView) return
@@ -15,7 +23,6 @@ export function useInView(options?: { threshold?: number }): [RefObject<HTMLDivE
     )
     const el = ref.current
     if (el) observer.observe(el)
-    // Force reveal after 600ms — handles edge cases (iframes, SSR hydration, etc.)
     const safetyId = setTimeout(() => setInView(true), 600)
     return () => {
       if (el) observer.unobserve(el)
