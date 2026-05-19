@@ -1,7 +1,6 @@
 import React from 'react'
 import { useInView } from '../../hooks/useInView'
 import Reveal from '../shared/Reveal'
-import InsightCard from '../shared/InsightCard'
 import { heatmap, heatmapRoles } from '../../data/surveyData'
 import { heatColor, heatTextColor } from '../../utils/heatmap'
 
@@ -17,10 +16,10 @@ export default function S6Heatmap() {
     <section className="section section--alt" ref={ref} aria-labelledby="s6-title">
       <div className="container-md">
         <Reveal>
-          <p className="section__eyebrow">04 · החיתוך הקריטי</p>
-          <h2 id="s6-title" className="section__title">איפה כל אתגר מכאיב יותר?</h2>
+          <p className="section__eyebrow">04 · חיתוך לפי תפקיד</p>
+          <h2 id="s6-title" className="section__title">איפה כל אתגר בולט יותר?</h2>
           <p className="section__sub">
-            אחוז המשיבים בכל תפקיד שבחר את האתגר. שני התאים המסומנים — נקודות הכאב המרכזיות.
+            אחוז המשיבים בכל תפקיד שבחרו את האתגר. שני התאים המסומנים — נקודות השיא.
           </p>
         </Reveal>
 
@@ -75,12 +74,6 @@ export default function S6Heatmap() {
             </div>
           </div>
         </Reveal>
-
-        <InsightCard tag="קריאת הנתונים" delay={200}>
-          <strong>מנהלים רפואיים</strong> נושאים את העומס הגדול ביותר (<span className="ltr" style={{ fontWeight: 700 }}>66.7%</span>) ואת הקריאה לסייע לצוות (<span className="ltr" style={{ fontWeight: 700 }}>40.7%</span>).
-          {' '}<strong>מנהלי משרד</strong> הם הקו הראשון מול תלונות מורכבות.
-          {' '}<strong>סגני מנהל רפואי</strong> ייחודיים בדרישה לתרגם מדדים לפעולה.
-        </InsightCard>
       </div>
     </section>
   )

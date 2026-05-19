@@ -16,13 +16,12 @@ export default function S3WhoResponded() {
           <p className="section__eyebrow">01 · מי השיב לסקר</p>
           <h2 id="s3-title" className="section__title">פרופיל המשיבים</h2>
           <p className="section__sub">
-            <span className="ltr">175</span> מובילי שירות מ-<span className="ltr">58</span> מרפאות, ב-<span className="ltr">5</span> תפקידים מרכזיים.
+            <span className="ltr">175</span> משיבים מ-<span className="ltr">58</span> מרפאות, ב-<span className="ltr">5</span> תפקידים מרכזיים.
           </p>
         </Reveal>
 
         <Reveal delay={100}>
           <div className="card mt-8 p-6 md:p-8">
-            {/* Segmented bar */}
             <div className="flex h-12 rounded-full overflow-hidden mb-6 gap-px" role="img" aria-label="התפלגות תפקידים">
               {roles.filter(r => r.count > 0).map((r, i) => (
                 <div
@@ -38,14 +37,18 @@ export default function S3WhoResponded() {
               ))}
             </div>
 
-            {/* Legend + bars */}
             <div className="flex flex-col gap-3">
               {roles.filter(r => r.count > 0).map((r, i) => (
                 <div key={r.he} className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full flex-shrink-0" style={{ background: COLORS[i] }} aria-hidden="true" />
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between gap-2 mb-1">
-                      <span className="text-sm font-medium text-md-navy truncate">{r.he}</span>
+                      <span className="text-sm font-medium text-md-navy truncate">
+                        {r.he}
+                        {r.en === '(no answer)' && (
+                          <span className="text-xs text-md-navy-softer font-normal me-1"> — לא ציינו תפקיד</span>
+                        )}
+                      </span>
                       <span className="text-sm font-bold text-md-navy-soft ltr whitespace-nowrap">{r.pct}%</span>
                     </div>
                     <div className="h-1.5 bg-md-bg-alt rounded-full overflow-hidden">

@@ -9,8 +9,6 @@ import S6Heatmap from './components/sections/S6Heatmap'
 import S7Strengthen from './components/sections/S7Strengthen'
 import S8Learning from './components/sections/S8Learning'
 import S9Voices from './components/sections/S9Voices'
-import S10Program from './components/sections/S10Program'
-import S11Takeaway from './components/sections/S11Takeaway'
 
 export default function App() {
   return (
@@ -25,8 +23,6 @@ export default function App() {
       <S7Strengthen />
       <S8Learning />
       <S9Voices />
-      <S10Program />
-      <S11Takeaway />
     </div>
   )
 }
