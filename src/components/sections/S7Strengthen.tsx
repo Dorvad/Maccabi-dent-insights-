@@ -1,7 +1,6 @@
 import React from 'react'
 import { useInView } from '../../hooks/useInView'
 import Reveal from '../shared/Reveal'
-import InsightCard from '../shared/InsightCard'
 import { strengthen } from '../../data/surveyData'
 
 export default function S7Strengthen() {
@@ -12,10 +11,10 @@ export default function S7Strengthen() {
     <section className="section" ref={ref} aria-labelledby="s7-title">
       <div className="container-md">
         <Reveal>
-          <p className="section__eyebrow">05 · מה לחזק</p>
-          <h2 id="s7-title" className="section__title">תחומים שמובילים רוצים לחזק</h2>
+          <p className="section__eyebrow">05 · תחומים לחיזוק</p>
+          <h2 id="s7-title" className="section__title">תחומים לחיזוק</h2>
           <p className="section__sub">
-            השטח מבקש עזרה פרקטית ברגעי עומס, מורכבות וחיכוך מול מטופלים.
+            מה ביקשו המשיבים לחזק בעבודתם.
           </p>
         </Reveal>
 
@@ -74,11 +73,6 @@ export default function S7Strengthen() {
             </div>
           </div>
         </Reveal>
-
-        <InsightCard tag="פרשנות" delay={200}>
-          המוקד: <strong>התמודדות עם מצבי שירות מורכבים</strong> ו-<strong>ניהול חלל ההמתנה</strong> — שתי הבקשות שמחזקות ביותר את הפאנל של 50% מהאתגר.
-          המובילים לא מבקשים ידע תיאורטי; הם מבקשים להיות מסוגלים לפעול תחת לחץ.
-        </InsightCard>
       </div>
     </section>
   )

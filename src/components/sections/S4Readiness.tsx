@@ -98,7 +98,7 @@ export default function S4Readiness() {
         </div>
 
         <InsightCard tag="פער בולט" delay={200} accent>
-          מנהלי משרד (ממוצע <span className="ltr font-black">3.34</span>) וסגני מנהל רפואי (<span className="ltr font-black">3.38</span>) — תחושת המוכנות הנמוכה ביותר במערכת. הם הצוות שזקוק ביותר לתמיכה מותאמת.
+          מנהלות משרד (ממוצע <span className="ltr font-black">3.34</span>) וסגני מנהל רפואי (<span className="ltr font-black">3.38</span>) — תחושת המוכנות הנמוכה ביותר. אלו התפקידים שזקוקים ביותר לתמיכה מותאמת.
         </InsightCard>
       </div>
     </section>
