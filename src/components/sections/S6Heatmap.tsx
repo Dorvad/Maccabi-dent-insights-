@@ -64,9 +64,9 @@ export default function S6Heatmap() {
             </div>
 
             <div className="heatmap__legend">
-              <span className="ltr">0%</span>
-              <div className="heatmap__legend-bar" />
               <span className="ltr">70%</span>
+              <div className="heatmap__legend-bar" />
+              <span className="ltr">0%</span>
               <span style={{ display: 'flex', alignItems: 'center', gap: 8, marginRight: 'auto' }}>
                 <span style={{ width: 14, height: 14, borderRadius: 4, border: '2px solid #FF6B5E', display: 'inline-block' }} aria-hidden="true" />
                 נקודת שיא
