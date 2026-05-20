@@ -78,7 +78,16 @@ function KpiCard({ value, decimals = 0, suffix = '', caption, icon, inView, dela
 export default function S2KpiStrip() {
   const [ref, inView] = useInView()
   return (
-    <section className="section section--alt" ref={ref} aria-label="מדדים מרכזיים" style={{ position: 'relative', overflow: 'hidden' }}>
+    <section
+      ref={ref}
+      aria-label="מדדים מרכזיים"
+      style={{
+        position: 'relative',
+        overflow: 'hidden',
+        background: 'linear-gradient(to bottom, #EBE1D1 0%, #F5F0E8 45%, #FFFFFF 100%)',
+      }}
+      className="section"
+    >
       <div aria-hidden="true" style={{
         position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
         width: 600, height: 300, borderRadius: '50%',
