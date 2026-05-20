@@ -76,7 +76,18 @@
   }
 
   .section__title {
-    @apply text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-md-navy mb-4 leading-tight;
+    @apply text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-md-navy mb-3 leading-tight;
+  }
+
+  .section__question {
+    font-size: 0.8125rem;
+    color: #64748B;
+    font-style: italic;
+    line-height: 1.6;
+    padding: 0.3rem 0.75rem;
+    border-right: 2px solid rgba(0, 164, 180, 0.4);
+    margin: 0.25rem 0 1.1rem;
+    display: block;
   }
 
   .section__sub {
@@ -328,13 +339,20 @@
   }
 
   .lollipop-item {
-    @apply flex items-center gap-4;
+    display: grid;
+    grid-template-columns: 10.5rem 1fr 3.25rem;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    .lollipop-item {
+      grid-template-columns: 7rem 1fr 3rem;
+    }
   }
 
   .lollipop-label {
     @apply text-sm font-medium text-md-navy text-right;
-    min-width: 180px;
-    max-width: 220px;
   }
 
   .lollipop-track {

@@ -18,6 +18,7 @@ export default function S4Readiness() {
         <Reveal>
           <p className="section__eyebrow">02 · תחושת מוכנות</p>
           <h2 id="s4-title" className="section__title">מוכנות להוביל שירות איכותי</h2>
+          <span className="section__question">שאלה 3: "באיזו מידה את/ה מרגיש/ה שיש לך כיום את הכלים הנדרשים כדי להוביל שירות איכותי במרפאה?"</span>
           <p className="section__sub">
             ממוצע כלל המשיבים: <strong className="text-md-primary"><span className="ltr">3.78 / 5</span></strong>. תמונה לא אחידה לפי תפקיד.
           </p>

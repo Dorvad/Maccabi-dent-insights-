@@ -13,6 +13,7 @@ export default function S7Strengthen() {
         <Reveal>
           <p className="section__eyebrow">05 · תחומים לחיזוק</p>
           <h2 id="s7-title" className="section__title">תחומים לחיזוק</h2>
+          <span className="section__question">שאלה 5: "אילו תחומים היית רוצה לחזק או לקבל בהם כלים פרקטיים? (ניתן לבחור יותר מתשובה אחת)"</span>
           <p className="section__sub">
             מה ביקשו המשיבים לחזק בעבודתם.
           </p>
@@ -26,7 +27,7 @@ export default function S7Strengthen() {
                 const widthPct = (item.pct / max) * 100
                 return (
                   <div key={item.he} className="lollipop-item" role="listitem">
-                    <div className="lollipop-label" style={{ fontWeight: isTop ? 700 : 500, minWidth: 'clamp(100px, 35%, 200px)', maxWidth: 'clamp(100px, 35%, 200px)' }}>
+                    <div className="lollipop-label" style={{ fontWeight: isTop ? 700 : 500 }}>
                       {item.he}
                       {isTop && (
                         <span style={{

@@ -87,6 +87,7 @@ export default function S9Voices() {
         <Reveal>
           <p className="section__eyebrow">07 · קולות מהשטח</p>
           <h2 id="s9-title" className="section__title">מה שמענו</h2>
+          <span className="section__question">שאלה 8: "אם היית מקבל/ת דבר אחד שהיה עוזר לך להוביל שירות טוב יותר במרפאה — מה הוא היה?"</span>
           <p className="section__sub">
             ציטוטים מתוך הסקר, מאורגנים לפי נושאים.
           </p>

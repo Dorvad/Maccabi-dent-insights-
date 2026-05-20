@@ -15,6 +15,7 @@ export default function S3WhoResponded() {
         <Reveal>
           <p className="section__eyebrow">01 · מי השיב לסקר</p>
           <h2 id="s3-title" className="section__title">פרופיל המשיבים</h2>
+          <span className="section__question">שאלה 1: "מה תפקידך במרפאה?"</span>
           <p className="section__sub">
             <span className="ltr">175</span> משיבים מ-<span className="ltr">58</span> מרפאות, ב-<span className="ltr">5</span> תפקידים מרכזיים.
           </p>

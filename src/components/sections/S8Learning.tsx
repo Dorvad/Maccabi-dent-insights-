@@ -28,9 +28,10 @@ export default function S8Learning() {
           {/* Formats */}
           <Reveal delay={0}>
             <div className="card" style={{ height: '100%' }}>
-              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#0B2A4A', marginBottom: '1.5rem', marginTop: 0 }}>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#0B2A4A', marginBottom: '0.5rem', marginTop: 0 }}>
                 פורמטי למידה מועדפים
               </h3>
+              <p className="section__question">שאלה 6: "איך הכי נכון עבורך לצרוך ידע וכלים בתחום השירות? (ניתן לבחור יותר מתשובה אחת)"</p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }} role="list">
                 {formats.map((f, i) => {
                   const isBold = BOLD_FORMATS.has(i)
@@ -43,8 +44,8 @@ export default function S8Learning() {
                         fontWeight: isBold ? 700 : 500,
                         color: isBold ? '#0B2A4A' : '#475569',
                         textAlign: 'right',
-                        minWidth: 150,
-                        maxWidth: 190,
+                        width: 160,
+                        flexShrink: 0,
                         lineHeight: 1.35,
                       }}>
                         {f.he}
@@ -83,9 +84,10 @@ export default function S8Learning() {
           {/* Frequency */}
           <Reveal delay={120}>
             <div className="card" style={{ height: '100%' }}>
-              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#0B2A4A', marginBottom: '1.5rem', marginTop: 0 }}>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#0B2A4A', marginBottom: '0.5rem', marginTop: 0 }}>
                 תדירות מועדפת
               </h3>
+              <p className="section__question">שאלה 7: "מה התדירות האידיאלית מבחינתך ללמידה/ליווי בתחום השירות?"</p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }} role="list">
                 {frequency.map((f, i) => {
                   const isBold = BOLD_FREQ.has(i)
