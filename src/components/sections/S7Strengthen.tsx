@@ -50,7 +50,7 @@ export default function S7Strengthen() {
                         className="lollipop-line"
                         style={{
                           width: inView ? `${widthPct}%` : '0%',
-                          background: isTop ? '#00A4B4' : '#94A3B8',
+                          background: isTop ? '#5AB9A5' : '#C1C2CC',
                           transitionDelay: `${i * 70}ms`,
                           right: 0,
                         }}
@@ -59,13 +59,13 @@ export default function S7Strengthen() {
                         className="lollipop-dot"
                         style={{
                           right: inView ? `calc(${widthPct}% - 7px)` : '-7px',
-                          background: isTop ? '#00A4B4' : '#94A3B8',
+                          background: isTop ? '#5AB9A5' : '#C1C2CC',
                           transitionDelay: `${i * 70}ms`,
                           left: 'auto',
                         }}
                       />
                     </div>
-                    <div className="lollipop-val" style={{ color: isTop ? '#00A4B4' : '#0B2A4A', fontWeight: isTop ? 900 : 700 }}>
+                    <div className="lollipop-val" style={{ color: isTop ? '#5AB9A5' : '#002060', fontWeight: isTop ? 900 : 700 }}>
                       {item.pct}%
                     </div>
                   </div>

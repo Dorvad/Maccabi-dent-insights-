@@ -3,7 +3,7 @@ import { useInView } from '../../hooks/useInView'
 import Reveal from '../shared/Reveal'
 import { roles } from '../../data/surveyData'
 
-const COLORS = ['#00A4B4', '#007A87', '#34C38F', '#F2B544', '#475569', '#94A3B8']
+const COLORS = ['#5AB9A5', '#003A3A', '#98AE56', '#F5990C', '#4898D1', '#C1C2CC']
 
 export default function S3WhoResponded() {
   const [ref, inView] = useInView()

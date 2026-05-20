@@ -4,8 +4,8 @@ import Reveal from '../shared/Reveal'
 const INSIGHTS = [
   {
     id: 1,
-    color: '#FF6B5E',
-    tint: 'rgba(255,107,94,0.07)',
+    color: '#E37C80',
+    tint: 'rgba(227,124,128,0.07)',
     title: 'העומס במרפאות הוא שורש מרכזי לפגיעה בחוויית השירות',
     body: 'זו התמה החוזרת ביותר בסקר. מנהלים מתארים עומס תפעולי, זמני המתנה, מחסור בכוח אדם ועומס רגשי – שמשפיעים ישירות גם על המטופלים וגם על הצוותים.',
     implications: [
@@ -23,8 +23,8 @@ const INSIGHTS = [
   },
   {
     id: 2,
-    color: '#00A4B4',
-    tint: 'rgba(0,164,180,0.07)',
+    color: '#5AB9A5',
+    tint: 'rgba(90,185,165,0.07)',
     title: 'יש צורך אמיתי בכלים פרקטיים להתמודדות עם מטופלים מורכבים',
     body: 'המנהלים מציפים שוב ושוב את הצורך לתת לצוותים כלים פשוטים וישימים להתמודדות עם מטופלים כועסים, לחוצים, מתוסכלים או חסרי סבלנות.',
     implications: [
@@ -41,8 +41,8 @@ const INSIGHTS = [
   },
   {
     id: 3,
-    color: '#34C38F',
-    tint: 'rgba(52,195,143,0.07)',
+    color: '#5BBBA7',
+    tint: 'rgba(91,187,167,0.07)',
     title: 'חוויית העובד נתפסת כתנאי לחוויית המטופל',
     body: 'המנהלים מזהים קשר ישיר בין מצב הצוות לבין איכות השירות שניתן בפועל.',
     implications: [
@@ -59,8 +59,8 @@ const INSIGHTS = [
   },
   {
     id: 4,
-    color: '#007A87',
-    tint: 'rgba(0,122,135,0.07)',
+    color: '#003A3A',
+    tint: 'rgba(0,58,58,0.07)',
     title: 'שירות נתפס כתוצאה של עבודת ממשקים – לא של סקטור אחד',
     body: 'אחת התובנות החזקות שעולות מהסקר היא שהמנהלים לא רואים שירות כאחריות של הקבלה בלבד, אלא כתוצאה של שיתוף פעולה בין כלל הסקטורים במרפאה.',
     implications: [
@@ -77,8 +77,8 @@ const INSIGHTS = [
   },
   {
     id: 5,
-    color: '#F2B544',
-    tint: 'rgba(242,181,68,0.07)',
+    color: '#F5990C',
+    tint: 'rgba(245,153,12,0.07)',
     title: 'יש רצון ללמידה קצרה, רציפה ומבוססת שטח',
     body: 'המנהלים פחות מחפשים "עוד קורס", ויותר למידה שמתחברת למציאות היומיומית במרפאות.',
     implications: [
@@ -96,8 +96,8 @@ const INSIGHTS = [
   },
   {
     id: 6,
-    color: '#475569',
-    tint: 'rgba(71,85,105,0.07)',
+    color: '#4898D1',
+    tint: 'rgba(72,152,209,0.07)',
     title: 'המנהלים מחפשים מעבר מניהול תגובתי לניהול שירות יוזם',
     body: 'מתחת להרבה מהתגובות יושבת שאיפה לעבור מתרבות של תגובה לתלונות – לניהול שירות אקטיבי ומונע.',
     implications: [
@@ -121,13 +121,13 @@ export default function S9Voices() {
       <div aria-hidden="true" style={{
         position: 'absolute', top: '4%', left: '-6rem',
         width: 420, height: 420, borderRadius: '50%',
-        background: 'radial-gradient(circle, #00A4B4 0%, transparent 70%)',
+        background: 'radial-gradient(circle, #5AB9A5 0%, transparent 70%)',
         opacity: 0.04, filter: 'blur(64px)', pointerEvents: 'none',
       }} />
       <div aria-hidden="true" style={{
         position: 'absolute', bottom: '8%', right: '-5rem',
         width: 320, height: 320, borderRadius: '50%',
-        background: 'radial-gradient(circle, #FF6B5E 0%, transparent 70%)',
+        background: 'radial-gradient(circle, #E37C80 0%, transparent 70%)',
         opacity: 0.05, filter: 'blur(52px)', pointerEvents: 'none',
       }} />
 
@@ -195,7 +195,7 @@ export default function S9Voices() {
                   <h3 style={{
                     fontSize: '1.0625rem',
                     fontWeight: 700,
-                    color: '#0B2A4A',
+                    color: '#002060',
                     margin: 0,
                     lineHeight: 1.5,
                     flex: 1,
@@ -246,7 +246,7 @@ export default function S9Voices() {
                         alignItems: 'baseline',
                         gap: '0.5rem',
                         fontSize: '0.875rem',
-                        color: '#0B2A4A',
+                        color: '#002060',
                         lineHeight: 1.6,
                       }}>
                         <span style={{ color: insight.color, fontSize: '0.45rem', flexShrink: 0, marginTop: 1 }}>●</span>

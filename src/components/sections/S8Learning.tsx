@@ -28,7 +28,7 @@ export default function S8Learning() {
           {/* Formats */}
           <Reveal delay={0}>
             <div className="card" style={{ height: '100%' }}>
-              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#0B2A4A', marginBottom: '0.5rem', marginTop: 0 }}>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#002060', marginBottom: '0.5rem', marginTop: 0 }}>
                 פורמטי למידה מועדפים
               </h3>
               <p className="section__question">שאלה 6: "איך הכי נכון עבורך לצרוך ידע וכלים בתחום השירות? (ניתן לבחור יותר מתשובה אחת)"</p>
@@ -42,7 +42,7 @@ export default function S8Learning() {
                       <span style={{
                         fontSize: '0.8125rem',
                         fontWeight: isBold ? 700 : 500,
-                        color: isBold ? '#0B2A4A' : '#475569',
+                        color: isBold ? '#002060' : '#475569',
                         textAlign: 'right',
                         width: 160,
                         flexShrink: 0,
@@ -62,16 +62,16 @@ export default function S8Learning() {
                           }}>נמוך</span>
                         )}
                       </span>
-                      <div style={{ flex: 1, height: '1.75rem', background: '#F7FAFB', borderRadius: 999, overflow: 'hidden' }}>
+                      <div style={{ flex: 1, height: '1.75rem', background: '#D7EDE9', borderRadius: 999, overflow: 'hidden' }}>
                         <div style={{
                           height: '100%',
                           borderRadius: 999,
                           width: inView ? `${w}%` : '0%',
-                          background: isLast ? '#CBD5E1' : isBold ? '#007A87' : '#00A4B4',
+                          background: isLast ? '#C1C2CC' : isBold ? '#003A3A' : '#5AB9A5',
                           transition: `width 0.7s cubic-bezier(0.22,1,0.36,1) ${i * 60}ms`,
                         }} />
                       </div>
-                      <span style={{ fontSize: '0.875rem', fontWeight: 700, color: '#0B2A4A', minWidth: 40, textAlign: 'left', direction: 'ltr' }}>
+                      <span style={{ fontSize: '0.875rem', fontWeight: 700, color: '#002060', minWidth: 40, textAlign: 'left', direction: 'ltr' }}>
                         {f.pct}%
                       </span>
                     </div>
@@ -84,7 +84,7 @@ export default function S8Learning() {
           {/* Frequency */}
           <Reveal delay={120}>
             <div className="card" style={{ height: '100%' }}>
-              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#0B2A4A', marginBottom: '0.5rem', marginTop: 0 }}>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#002060', marginBottom: '0.5rem', marginTop: 0 }}>
                 תדירות מועדפת
               </h3>
               <p className="section__question">שאלה 7: "מה התדירות האידיאלית מבחינתך ללמידה/ליווי בתחום השירות?"</p>
@@ -95,15 +95,15 @@ export default function S8Learning() {
                   return (
                     <div key={f.he} role="listitem">
                       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.375rem' }}>
-                        <span style={{ fontSize: '0.9375rem', fontWeight: isBold ? 700 : 500, color: '#0B2A4A' }}>{f.he}</span>
-                        <span style={{ fontSize: '0.875rem', fontWeight: 700, color: isBold ? '#00A4B4' : '#475569', direction: 'ltr' }}>{f.pct}%</span>
+                        <span style={{ fontSize: '0.9375rem', fontWeight: isBold ? 700 : 500, color: '#002060' }}>{f.he}</span>
+                        <span style={{ fontSize: '0.875rem', fontWeight: 700, color: isBold ? '#5AB9A5' : '#475569', direction: 'ltr' }}>{f.pct}%</span>
                       </div>
-                      <div style={{ height: '2.5rem', background: '#F7FAFB', borderRadius: '0.75rem', overflow: 'hidden' }}>
+                      <div style={{ height: '2.5rem', background: '#EBE1D1', borderRadius: '0.75rem', overflow: 'hidden' }}>
                         <div style={{
                           height: '100%',
                           borderRadius: '0.75rem',
                           width: inView ? `${w}%` : '0%',
-                          background: isBold ? 'linear-gradient(90deg, #007A87, #00A4B4)' : '#E0F5F7',
+                          background: isBold ? 'linear-gradient(90deg, #003A3A, #5AB9A5)' : '#D7EDE9',
                           transition: `width 0.7s cubic-bezier(0.22,1,0.36,1) ${i * 80}ms`,
                           display: 'flex',
                           alignItems: 'center',
