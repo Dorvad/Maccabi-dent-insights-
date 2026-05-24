@@ -4,7 +4,6 @@ import Reveal from '../shared/Reveal'
 import InsightCard from '../shared/InsightCard'
 import { readiness } from '../../data/surveyData'
 
-const RATING_LABELS: Record<number, string> = { 1: 'לא מוכן/ת', 2: 'חלקית', 3: 'בינוני', 4: 'מוכן/ת', 5: 'מוכן/ת מאוד' }
 const BEAD_COLORS = ['#E37C80', '#F5990C', '#C1C2CC', '#5AB9A5', '#003A3A']
 
 export default function S4Readiness() {
