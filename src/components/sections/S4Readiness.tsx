@@ -17,7 +17,7 @@ export default function S4Readiness() {
       <div className="container-md">
         <Reveal>
           <p className="section__eyebrow">02 · תחושת מוכנות</p>
-          <h2 id="s4-title" className="section__title">מוכנות להוביל שירות איכותי</h2>
+          <h2 id="s4-title" className="section__title">כלים להובלת שינוי איכותי במרפאה</h2>
           <span className="section__question">שאלה 3: "באיזו מידה את/ה מרגיש/ה שיש לך כיום את הכלים הנדרשים כדי להוביל שירות איכותי במרפאה?"</span>
           <p className="section__sub">
             ממוצע כלל המשיבים: <strong className="text-md-primary"><span className="ltr">3.78 / 5</span></strong>. תמונה לא אחידה לפי תפקיד.
@@ -99,7 +99,7 @@ export default function S4Readiness() {
         </div>
 
         <InsightCard tag="פער בולט" delay={200} accent>
-          מנהלות משרד (ממוצע <span className="ltr font-black">3.34</span>) וסגני מנהל רפואי (<span className="ltr font-black">3.38</span>) — תחושת המוכנות הנמוכה ביותר. אלו התפקידים שהכי זקוקים לתמיכה מותאמת.
+          מנהלות משרד (ממוצע <span className="ltr font-black">3.34</span>) וסגני מנהל רפואי (<span className="ltr font-black">3.38</span>) — מרגישים שיש להם הכי פחות כלים להובלת שינוי. אלו התפקידים שהכי זקוקים לתמיכה מותאמת.
         </InsightCard>
       </div>
     </section>
