@@ -13,15 +13,19 @@ function InsightCard({ item, index }: { item: (typeof insights)[number], index: 
         </header>
 
         <section className="insight-showcase-card__section">
-          <p>מה אמרו בשטח</p>
-          <ul>
-            {item.fieldQuotes.map((q, i) => <li key={i}>{q}</li>)}
+          <h4 className="insight-showcase-card__section-title">מה אמרו בשטח</h4>
+          <ul className="insight-showcase-card__quotes">
+            {item.fieldQuotes.map((q, i) => (
+              <li key={i}>
+                <blockquote>{q}</blockquote>
+              </li>
+            ))}
           </ul>
         </section>
 
         <section className="insight-showcase-card__section">
-          <p>רעיונות לפעולה — מתוך דברי המנהלים</p>
-          <ol>
+          <h4 className="insight-showcase-card__section-title">רעיונות לפעולה — מתוך דברי המנהלים</h4>
+          <ol className="insight-showcase-card__actions">
             {item.actionIdeas.map((a, i) => <li key={i}>{a}</li>)}
           </ol>
         </section>
@@ -69,7 +73,6 @@ export default function S11InsightsShowcase() {
                 </section>
               ))}
             </div>
-            <p className="initiative-panel__note">הרעיונות לפעולה מצוטטים כלשונם מתשובות המנהלים בסקר</p>
           </article>
         </Reveal>
       </div>

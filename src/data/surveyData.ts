@@ -47,7 +47,7 @@ export const challenges = [
 ]
 
 export const heatmapRoles = [
-  { key: 'admin',  short: 'אדמיניסטרטיבי/ת', n: 59 },
+  { key: 'admin',  short: 'מנהל/ת אדמיניסטרטיבי/ת', n: 59 },
   { key: 'office', short: 'מנהל/ת משרד',      n: 38 },
   { key: 'asst',   short: 'צוות סייעות',       n: 32 },
   { key: 'med',    short: 'מנהל/ת רפואי/ת',    n: 27 },
