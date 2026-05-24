@@ -13,6 +13,7 @@ export default function S7Strengthen() {
         <Reveal>
           <p className="section__eyebrow">05 · תחומים לחיזוק</p>
           <h2 id="s7-title" className="section__title">תחומים לחיזוק</h2>
+          <span className="section__question">שאלה 5: "אילו תחומים היית רוצה לחזק או לקבל בהם כלים פרקטיים? (ניתן לבחור יותר מתשובה אחת)"</span>
           <p className="section__sub">
             מה ביקשו המשיבים לחזק בעבודתם.
           </p>
@@ -26,7 +27,7 @@ export default function S7Strengthen() {
                 const widthPct = (item.pct / max) * 100
                 return (
                   <div key={item.he} className="lollipop-item" role="listitem">
-                    <div className="lollipop-label" style={{ fontWeight: isTop ? 700 : 500, minWidth: 'clamp(100px, 35%, 200px)', maxWidth: 'clamp(100px, 35%, 200px)' }}>
+                    <div className="lollipop-label" style={{ fontWeight: isTop ? 700 : 500 }}>
                       {item.he}
                       {isTop && (
                         <span style={{
@@ -49,7 +50,7 @@ export default function S7Strengthen() {
                         className="lollipop-line"
                         style={{
                           width: inView ? `${widthPct}%` : '0%',
-                          background: isTop ? '#00A4B4' : '#94A3B8',
+                          background: isTop ? '#5AB9A5' : '#C1C2CC',
                           transitionDelay: `${i * 70}ms`,
                           right: 0,
                         }}
@@ -58,13 +59,13 @@ export default function S7Strengthen() {
                         className="lollipop-dot"
                         style={{
                           right: inView ? `calc(${widthPct}% - 7px)` : '-7px',
-                          background: isTop ? '#00A4B4' : '#94A3B8',
+                          background: isTop ? '#5AB9A5' : '#C1C2CC',
                           transitionDelay: `${i * 70}ms`,
                           left: 'auto',
                         }}
                       />
                     </div>
-                    <div className="lollipop-val" style={{ color: isTop ? '#00A4B4' : '#0B2A4A', fontWeight: isTop ? 900 : 700 }}>
+                    <div className="lollipop-val" style={{ color: isTop ? '#5AB9A5' : '#002060', fontWeight: isTop ? 900 : 700 }}>
                       {item.pct}%
                     </div>
                   </div>

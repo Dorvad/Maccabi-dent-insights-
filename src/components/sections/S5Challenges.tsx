@@ -13,6 +13,7 @@ export default function S5Challenges() {
         <Reveal>
           <p className="section__eyebrow">03 · האתגרים</p>
           <h2 id="s5-title" className="section__title">האתגרים המרכזיים</h2>
+          <span className="section__question">שאלה 4: "מהם 2-3 האתגרים המשמעותיים ביותר שאת/ה מתמודד/ת איתם בהובלת השירות? (ניתן לבחור יותר מתשובה אחת)"</span>
           <p className="section__sub">
             שאלת בחירה מרובה. <strong className="text-md-navy">אחד מכל שני משיבים</strong> ציין עומס וזמני המתנה כאתגר המרכזי.
           </p>

@@ -9,7 +9,7 @@ export default function S1Hero() {
       style={{
         position: 'relative',
         overflow: 'hidden',
-        background: 'linear-gradient(160deg, #FFFFFF 0%, #F0FBFC 60%, #E0F5F7 100%)',
+        background: 'linear-gradient(160deg, #FFFFFF 0%, #F5F0E8 60%, #EBE1D1 100%)',
         paddingTop: '5rem',
         paddingBottom: '4rem',
       }}

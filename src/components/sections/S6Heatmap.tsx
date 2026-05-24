@@ -18,6 +18,7 @@ export default function S6Heatmap() {
         <Reveal>
           <p className="section__eyebrow">04 · חיתוך לפי תפקיד</p>
           <h2 id="s6-title" className="section__title">איפה כל אתגר בולט יותר?</h2>
+          <span className="section__question">שאלה 4 — חיתוך לפי תפקיד: "מהם 2-3 האתגרים המשמעותיים ביותר שאת/ה מתמודד/ת איתם בהובלת השירות?"</span>
           <p className="section__sub">
             אחוז המשיבים בכל תפקיד שבחרו את האתגר. שני התאים המסומנים — נקודות השיא.
           </p>
@@ -64,9 +65,9 @@ export default function S6Heatmap() {
             </div>
 
             <div className="heatmap__legend">
-              <span className="ltr">0%</span>
-              <div className="heatmap__legend-bar" />
               <span className="ltr">70%</span>
+              <div className="heatmap__legend-bar" />
+              <span className="ltr">0%</span>
               <span style={{ display: 'flex', alignItems: 'center', gap: 8, marginRight: 'auto' }}>
                 <span style={{ width: 14, height: 14, borderRadius: 4, border: '2px solid #FF6B5E', display: 'inline-block' }} aria-hidden="true" />
                 נקודת שיא

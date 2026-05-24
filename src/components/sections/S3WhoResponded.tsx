@@ -3,7 +3,7 @@ import { useInView } from '../../hooks/useInView'
 import Reveal from '../shared/Reveal'
 import { roles } from '../../data/surveyData'
 
-const COLORS = ['#00A4B4', '#007A87', '#34C38F', '#F2B544', '#475569', '#94A3B8']
+const COLORS = ['#5AB9A5', '#003A3A', '#98AE56', '#F5990C', '#4898D1', '#C1C2CC']
 
 export default function S3WhoResponded() {
   const [ref, inView] = useInView()
@@ -15,6 +15,7 @@ export default function S3WhoResponded() {
         <Reveal>
           <p className="section__eyebrow">01 · מי השיב לסקר</p>
           <h2 id="s3-title" className="section__title">פרופיל המשיבים</h2>
+          <span className="section__question">שאלה 1: "מה תפקידך במרפאה?"</span>
           <p className="section__sub">
             <span className="ltr">175</span> משיבים מ-<span className="ltr">58</span> מרפאות, ב-<span className="ltr">5</span> תפקידים מרכזיים.
           </p>

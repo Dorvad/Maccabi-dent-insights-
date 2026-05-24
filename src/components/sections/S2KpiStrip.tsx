@@ -52,12 +52,18 @@ function KpiCard({ value, decimals = 0, suffix = '', caption, icon, inView, dela
           style={{
             color,
             background: `${color}18`,
-            animation: inView ? `pulse-glow 2.5s ease-in-out ${delay + 800}ms infinite` : 'none',
+            animation: inView ? `mint-breathe 2.5s ease-in-out ${delay + 800}ms infinite` : 'none',
           }}
         >
           {ICONS[icon]}
         </div>
-        <div className="kpi__num" style={{ color: '#0B2A4A' }}>
+        <div
+          className="kpi__num"
+          style={{
+            color: '#002060',
+            animation: inView ? `warm-rise 0.6s cubic-bezier(0.22,1,0.36,1) ${delay + 200}ms both` : 'none',
+          }}
+        >
           <span className="ltr">
             {decimals > 0 ? current.toFixed(decimals) : current}
             {suffix && <span className="kpi__num-unit">{suffix}</span>}
@@ -72,19 +78,28 @@ function KpiCard({ value, decimals = 0, suffix = '', caption, icon, inView, dela
 export default function S2KpiStrip() {
   const [ref, inView] = useInView()
   return (
-    <section className="section section--alt" ref={ref} aria-label="מדדים מרכזיים" style={{ position: 'relative', overflow: 'hidden' }}>
+    <section
+      ref={ref}
+      aria-label="מדדים מרכזיים"
+      style={{
+        position: 'relative',
+        overflow: 'hidden',
+        background: 'linear-gradient(to bottom, #EBE1D1 0%, #F5F0E8 45%, #FFFFFF 100%)',
+      }}
+      className="section"
+    >
       <div aria-hidden="true" style={{
         position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
         width: 600, height: 300, borderRadius: '50%',
-        background: 'radial-gradient(ellipse, #00A4B4 0%, transparent 70%)',
+        background: 'radial-gradient(ellipse, #5AB9A5 0%, transparent 70%)',
         opacity: 0.04, filter: 'blur(60px)', pointerEvents: 'none',
       }} />
       <div className="container-md" style={{ position: 'relative', zIndex: 1 }}>
         <div className="kpi-strip">
-          <KpiCard value={175} caption='משיבים בסה"כ'       icon="users"  inView={inView} delay={0}   color="#00A4B4" />
-          <KpiCard value={58}  caption="מרפאות שכוסו בסקר"  icon="clinic" inView={inView} delay={80}  color="#007A87" />
-          <KpiCard value={70.3} decimals={1} suffix="%" caption="השלימו את הסקר" icon="check" inView={inView} delay={160} color="#34C38F" />
-          <KpiCard value={3.78} decimals={2} suffix=" / 5" caption="תחושת מוכנות ממוצעת" icon="star" inView={inView} delay={240} color="#F2B544" />
+          <KpiCard value={175} caption='משיבים בסה"כ'       icon="users"  inView={inView} delay={0}   color="#5AB9A5" />
+          <KpiCard value={58}  caption="מרפאות שכוסו בסקר"  icon="clinic" inView={inView} delay={80}  color="#003A3A" />
+          <KpiCard value={70.3} decimals={1} suffix="%" caption="השלימו את הסקר" icon="check" inView={inView} delay={160} color="#98AE56" />
+          <KpiCard value={3.78} decimals={2} suffix=" / 5" caption="תחושת מוכנות ממוצעת" icon="star" inView={inView} delay={240} color="#F5990C" />
         </div>
       </div>
     </section>

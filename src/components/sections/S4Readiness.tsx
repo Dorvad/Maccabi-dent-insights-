@@ -5,7 +5,7 @@ import InsightCard from '../shared/InsightCard'
 import { readiness } from '../../data/surveyData'
 
 const RATING_LABELS: Record<number, string> = { 1: 'לא מוכן/ת', 2: 'חלקית', 3: 'בינוני', 4: 'מוכן/ת', 5: 'מוכן/ת מאוד' }
-const BEAD_COLORS = ['#FF6B5E', '#F2B544', '#94A3B8', '#00A4B4', '#007A87']
+const BEAD_COLORS = ['#E37C80', '#F5990C', '#C1C2CC', '#5AB9A5', '#003A3A']
 
 export default function S4Readiness() {
   const [ref, inView] = useInView()
@@ -18,6 +18,7 @@ export default function S4Readiness() {
         <Reveal>
           <p className="section__eyebrow">02 · תחושת מוכנות</p>
           <h2 id="s4-title" className="section__title">מוכנות להוביל שירות איכותי</h2>
+          <span className="section__question">שאלה 3: "באיזו מידה את/ה מרגיש/ה שיש לך כיום את הכלים הנדרשים כדי להוביל שירות איכותי במרפאה?"</span>
           <p className="section__sub">
             ממוצע כלל המשיבים: <strong className="text-md-primary"><span className="ltr">3.78 / 5</span></strong>. תמונה לא אחידה לפי תפקיד.
           </p>
@@ -84,7 +85,7 @@ export default function S4Readiness() {
                           className="h-full rounded-full"
                           style={{
                             width: inView ? `${pct}%` : '0%',
-                            background: isMin ? '#FF6B5E' : isMax ? '#007A87' : '#00A4B4',
+                            background: isMin ? '#E37C80' : isMax ? '#003A3A' : '#5AB9A5',
                             transition: `width 0.7s cubic-bezier(0.22,1,0.36,1) ${i * 80}ms`,
                           }}
                         />
@@ -98,7 +99,7 @@ export default function S4Readiness() {
         </div>
 
         <InsightCard tag="פער בולט" delay={200} accent>
-          מנהלות משרד (ממוצע <span className="ltr font-black">3.34</span>) וסגני מנהל רפואי (<span className="ltr font-black">3.38</span>) — תחושת המוכנות הנמוכה ביותר. אלו התפקידים שזקוקים ביותר לתמיכה מותאמת.
+          מנהלות משרד (ממוצע <span className="ltr font-black">3.34</span>) וסגני מנהל רפואי (<span className="ltr font-black">3.38</span>) — תחושת המוכנות הנמוכה ביותר. אלו התפקידים שהכי זקוקים לתמיכה מותאמת.
         </InsightCard>
       </div>
     </section>
