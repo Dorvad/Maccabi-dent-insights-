@@ -403,3 +403,62 @@
     @apply text-base md:text-lg text-md-navy leading-relaxed;
   }
 }
+
+  /* Insights Showcase */
+  .insight-showcase {
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(1100px 500px at 20% -10%, rgba(90,185,165,0.2), transparent),
+      radial-gradient(900px 450px at 85% 0%, rgba(0,164,180,0.18), transparent),
+      linear-gradient(165deg, #0b2a4a 0%, #0d3557 48%, #114770 100%);
+  }
+  .insight-showcase__lights {
+    position: absolute; inset: 0; pointer-events: none;
+    background-image: radial-gradient(rgba(255,255,255,0.12) 1.2px, transparent 0);
+    background-size: 24px 24px;
+    opacity: .2;
+  }
+  .insight-showcase__container { position: relative; z-index: 1; padding-top: 4.5rem; padding-bottom: 5rem; }
+  .insight-showcase__title { text-align:center; color:#fff; margin:0 0 .4rem; font-size:clamp(1.7rem,3vw,2.6rem); }
+  .insight-showcase__subtitle { text-align:center; color:#9fe9f0; margin:0 0 2rem; font-weight:600; }
+  .insight-showcase__grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); }
+
+  .insight-showcase-card {
+    position: relative;
+    padding: 1.2rem;
+    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,.18);
+    background: linear-gradient(160deg, rgba(255,255,255,.16), rgba(255,255,255,.04));
+    box-shadow: 0 14px 40px rgba(0,0,0,.25);
+    backdrop-filter: blur(8px);
+    transform-style: preserve-3d;
+    transition: transform .35s ease, box-shadow .35s ease;
+  }
+  .insight-showcase-card:hover { transform: translateY(-4px) rotateX(3deg); box-shadow: 0 20px 48px rgba(0,0,0,.32); }
+  .insight-showcase-card__glow { position:absolute; inset:-2px; border-radius:22px; background:linear-gradient(130deg, rgba(90,185,165,.35), transparent 40%, rgba(0,164,180,.35)); filter: blur(16px); opacity:.65; z-index:-1; }
+  .insight-showcase-card__header { display:flex; align-items:center; gap:10px; margin-bottom:.7rem; }
+  .insight-showcase-card__id { min-width:34px; height:34px; border-radius:50%; display:grid; place-items:center; color:#06233d; font-weight:800; background: radial-gradient(circle at 30% 30%, #34C38F, #00A4B4); }
+  .insight-showcase-card h3 { margin:0; color:#fff; font-size:1.06rem; line-height:1.48; }
+  .insight-showcase-card__section p { margin:0 0 .45rem; font-weight:700; color:#9fe9f0; font-size:.9rem; }
+  .insight-showcase-card__section ul, .insight-showcase-card__section ol { margin:0 0 .75rem; padding-inline-start:1.1rem; color:rgba(255,255,255,.92); line-height:1.75; }
+
+  .initiative-panel { margin-top:2rem; border-radius:22px; border:1px solid rgba(255,255,255,.18); background:rgba(255,255,255,.08); overflow:hidden; }
+  .initiative-panel__head { display:grid; grid-template-columns: 1.15fr 1fr 1.45fr; background:rgba(0,0,0,.15); }
+  .initiative-panel__head h3 { margin:0; padding:1rem; color:#aeeaf0; font-size:.95rem; }
+  .initiative-row { display:grid; grid-template-columns: 1.15fr 1fr 1.45fr; border-top:1px solid rgba(255,255,255,.12); }
+  .initiative-row > * { padding:1rem; }
+  .initiative-row__name { display:flex; gap:.75rem; align-items:flex-start; color:#fff; }
+  .initiative-row__name span { min-width:28px; height:28px; border-radius:8px; display:grid; place-items:center; background:rgba(90,185,165,.22); font-weight:700; }
+  .initiative-row__name h4 { margin:.1rem 0 .2rem; font-size:1rem; color:#fff; }
+  .initiative-row__name p { margin:0; color:#9fe9f0; font-size:.92rem; }
+  .initiative-row__goal { margin:0; color:rgba(255,255,255,.92); line-height:1.6; }
+  .initiative-row__contents { margin:0; padding-inline-start:1rem; color:rgba(255,255,255,.92); line-height:1.6; }
+  .initiative-panel__note { margin:0; padding:.9rem 1.2rem; font-size:.85rem; color:rgba(255,255,255,.78); border-top:1px solid rgba(255,255,255,.12); }
+
+  @media (max-width: 980px) {
+    .initiative-panel__head { display:none; }
+    .initiative-row { grid-template-columns: 1fr; }
+    .initiative-row > * { border-top: 1px dashed rgba(255,255,255,.12); }
+    .initiative-row__name { border-top: none; }
+  }
