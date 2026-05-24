@@ -30,7 +30,6 @@ export default function S1Hero() {
           <h1 id="hero-title" className="hero__title">מיפוי צרכים בתחום השירות</h1>
           <p className="hero__sub" style={{ marginBottom: 0 }}>
             <span className="ltr">175</span> משיבים מ-<span className="ltr">58</span> מרפאות, ב-5 תפקידים.
-            מה שמענו מהשטח.
           </p>
         </Reveal>
       </div>

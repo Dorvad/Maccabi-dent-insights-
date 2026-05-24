@@ -20,7 +20,7 @@ export default function S4Readiness() {
           <h2 id="s4-title" className="section__title">כלים להובלת שינוי איכותי במרפאה</h2>
           <span className="section__question">שאלה 3: "באיזו מידה את/ה מרגיש/ה שיש לך כיום את הכלים הנדרשים כדי להוביל שירות איכותי במרפאה?"</span>
           <p className="section__sub">
-            ממוצע כלל המשיבים: <strong className="text-md-primary"><span className="ltr">3.78 / 5</span></strong>. תמונה לא אחידה לפי תפקיד.
+            ממוצע כלל המשיבים: <strong className="text-md-primary"><span className="ltr">3.78 / 5</span></strong>. 
           </p>
         </Reveal>
 
